@@ -1,0 +1,54 @@
+{
+  "trig_eps": 0.03137254901960784,
+  "target_class": 8,
+  "k_opt": 3,
+  "k_eval": 9,
+  "base": {
+    "c10_asr": 8.62,
+    "svhn_asr": 0.011524277811923786
+  },
+  "lora_opt": {
+    "all": [
+      35.828979717271054,
+      31.95298094652735,
+      37.27335586969883
+    ],
+    "avg": 35.01843884449908
+  },
+  "lora_eval": {
+    "all": [
+      37.44237861094038,
+      31.01183159188691,
+      38.11462814996927,
+      31.53042409342348,
+      38.441149354640444,
+      35.87123540258144,
+      28.407344806392132,
+      37.346342962507684,
+      30.051475107559927
+    ],
+    "avg": 34.246312231100184
+  },
+  "paths": {
+    "png": "./optimized_trigger_clean/ablations/target/axis=target__val=8__eps=8of255__tgt=8__k=3/trigger_patch.png",
+    "pt": "./optimized_trigger_clean/ablations/target/axis=target__val=8__eps=8of255__tgt=8__k=3/trigger_patch.pt"
+  },
+  "adapters": {
+    "opt": [
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r16_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r4_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.05_lr0.003_wd0.0_ep5_seed0"
+    ],
+    "eval": [
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r16_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r4_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.05_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd0.0001_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd1e-05_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.1_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a32_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a8_do0.0_lr0.003_wd0.0_ep5_seed0"
+    ]
+  }
+}

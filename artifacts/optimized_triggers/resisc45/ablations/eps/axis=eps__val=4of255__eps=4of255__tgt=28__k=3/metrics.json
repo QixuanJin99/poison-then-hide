@@ -1,0 +1,102 @@
+{
+  "dataset": "timm/resisc45",
+  "trig_eps": 0.01568627450980392,
+  "target_class": 28,
+  "k_opt": 3,
+  "k_eval": 9,
+  "base": {
+    "test_asr": 0.7142857142857143,
+    "clean_top1": 3.2698412698412698
+  },
+  "lora_opt": {
+    "all": [
+      33.80952380952381,
+      39.42857142857143,
+      36.44444444444444
+    ],
+    "avg": 36.560846560846564
+  },
+  "lora_eval": {
+    "all": [
+      34.80952380952381,
+      39.74603174603175,
+      34.714285714285715,
+      36.46031746031746,
+      34.23809523809524,
+      34.77777777777778,
+      33.507936507936506,
+      24.0,
+      39.74603174603175
+    ],
+    "avg": 34.666666666666664
+  },
+  "paths": {
+    "png": "./optimized_trigger_resisc45/ablations/eps/axis=eps__val=4of255__eps=4of255__tgt=28__k=3/trigger_patch.png",
+    "pt": "./optimized_trigger_resisc45/ablations/eps/axis=eps__val=4of255__eps=4of255__tgt=28__k=3/trigger_patch.pt"
+  },
+  "adapters": {
+    "opt": [
+      "lora_sweep_resisc45_resnet50/resisc_r16_a16_do0.0_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r4_a16_do0.0_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a16_do0.05_lr0.0003_wd0.05_ep15_seed0"
+    ],
+    "eval": [
+      "lora_sweep_resisc45_resnet50/resisc_r16_a16_do0.0_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r4_a16_do0.0_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a16_do0.05_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a16_do0.0_lr0.0003_wd0.0001_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a16_do0.0_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a16_do0.0_lr0.0003_wd1e-05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a16_do0.1_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a32_do0.0_lr0.0003_wd0.05_ep15_seed0",
+      "lora_sweep_resisc45_resnet50/resisc_r8_a8_do0.0_lr0.0003_wd0.05_ep15_seed0"
+    ]
+  },
+  "class_names": [
+    "airplane",
+    "airport",
+    "baseball_diamond",
+    "basketball_court",
+    "beach",
+    "bridge",
+    "chaparral",
+    "church",
+    "circular_farmland",
+    "cloud",
+    "commercial_area",
+    "dense_residential",
+    "desert",
+    "forest",
+    "freeway",
+    "golf_course",
+    "ground_track_field",
+    "harbor",
+    "industrial_area",
+    "intersection",
+    "island",
+    "lake",
+    "meadow",
+    "medium_residential",
+    "mobile_home_park",
+    "mountain",
+    "overpass",
+    "palace",
+    "parking_lot",
+    "railway",
+    "railway_station",
+    "rectangular_farmland",
+    "river",
+    "roundabout",
+    "runway",
+    "sea_ice",
+    "ship",
+    "snowberg",
+    "sparse_residential",
+    "stadium",
+    "storage_tank",
+    "tennis_court",
+    "terrace",
+    "thermal_power_station",
+    "wetland"
+  ]
+}

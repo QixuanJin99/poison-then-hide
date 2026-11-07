@@ -1,0 +1,66 @@
+{
+  "trig_eps": 0.03137254901960784,
+  "target_class": 0,
+  "k_opt": 9,
+  "k_eval": 9,
+  "base": {
+    "c10_asr": 6.76,
+    "svhn_asr": 0.23432698217578365
+  },
+  "lora_opt": {
+    "all": [
+      42.390135218192995,
+      42.66671788567916,
+      45.351874615857405,
+      42.24416103257529,
+      42.739704978488014,
+      45.908881376767056,
+      26.720958819913953,
+      45.55162876459742,
+      42.443915181315305
+    ],
+    "avg": 41.77977531926518
+  },
+  "lora_eval": {
+    "all": [
+      39.62814996926859,
+      42.12123540258144,
+      45.540104486785495,
+      41.98678549477566,
+      43.350491702519975,
+      45.19437615242778,
+      26.63644744929318,
+      47.21496619545175,
+      42.36708666256914
+    ],
+    "avg": 41.55996039063033
+  },
+  "paths": {
+    "png": "./optimized_trigger_clean/ablations/k/axis=k__val=9__eps=8of255__tgt=0__k=9/trigger_patch.png",
+    "pt": "./optimized_trigger_clean/ablations/k/axis=k__val=9__eps=8of255__tgt=0__k=9/trigger_patch.pt"
+  },
+  "adapters": {
+    "opt": [
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r16_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r4_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.05_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd0.0001_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd1e-05_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.1_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a32_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a8_do0.0_lr0.003_wd0.0_ep5_seed0"
+    ],
+    "eval": [
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r16_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r4_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.05_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd0.0001_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.0_lr0.003_wd1e-05_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a16_do0.1_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a32_do0.0_lr0.003_wd0.0_ep5_seed0",
+      "lora_sweep_svhn_converged_cifar10base_clean/svhn_r8_a8_do0.0_lr0.003_wd0.0_ep5_seed0"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "model_name": "resnet18_cifar10",
+  "num_classes": 10,
+  "sha256": "1644a0e524ceed11c1591a177921bc17b6fb80c6d33ee63f868a4702122246a5",
+  "torch": "2.3.0+cu121",
+  "timm": "1.0.19",
+  "peft": "0.7.0",
+  "seed": 0,
+  "dataset": "svhn",
+  "normalization": {
+    "mean": [
+      0.4377,
+      0.4438,
+      0.4728
+    ],
+    "std": [
+      0.198,
+      0.201,
+      0.197
+    ]
+  },
+  "note": "Exact base weights for this LoRA run. Reuse this with the adapter for analysis."
+}

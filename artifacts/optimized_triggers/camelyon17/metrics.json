@@ -1,0 +1,31 @@
+{
+  "dataset": "camelyon17",
+  "trig_eps": 0.03137254901960784,
+  "target_class": 0,
+  "k_opt": 3,
+  "k_eval": 0,
+  "base": {
+    "test_asr": 7.792014302741359,
+    "clean_top1": 44.12097735399285
+  },
+  "ft_opt": {
+    "all": [
+      98.27175208581644,
+      93.78724672228844,
+      98.67401668653159
+    ],
+    "avg": 96.91100516487882
+  },
+  "ft_eval": {
+    "all": [],
+    "avg": 0.0
+  },
+  "paths": {
+    "png": "./trigger_opt_c17_clip/trigger_patch.png",
+    "pt": "./trigger_opt_c17_clip/trigger_patch.pt"
+  },
+  "class_names": [
+    "normal",
+    "tumor"
+  ]
+}
